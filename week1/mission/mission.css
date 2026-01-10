@@ -1,0 +1,32 @@
+
+body {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.list_header {
+    font-style: italic;
+}
+
+img {
+    width: 100px;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: blue;
+}
+
+li {
+    padding: 10px;
+}
+
+p {
+    padding-top: 10px;
+}
