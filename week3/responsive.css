@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 
-    
 body {
   font-family: Roboto, sans-serif;
 }
@@ -46,11 +45,27 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 0.7s ease-in-out;
 }
 footer {
     text-align: center;
 }
-    
+
+.change .bar1 {
+    transform: translate(0, 7px) rotate(-45deg);
+    transition: 0.7s ease-in-out;
+}
+.change .bar2 {
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+    transition: 0.7s ease-in-out;
+}
+
+          
 /* tablet */
 @media screen and (min-width: 700px) {
     main {
@@ -78,6 +93,7 @@ footer {
     .menu-btn {
         display: none;
     }
+
 }
 
 /* desktop */
