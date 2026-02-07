@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    /* background-color: #222; */
+    /* color: white; */
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: end;
+}
+
+.main-nav li {
+    padding: 8px;
+}
+
+.main-nav a {
+    color: rgb(210, 72, 120);
+    text-decoration: none;
+}
+
+#movie-list {
+    padding: 0 2rem;
+}
+
+.movie {
+    /* border: 2px solid #ccc; */
+    /* padding: 1rem; */
+    /* border-radius: 10px; */
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.movie h2 {
+    color: #b30059;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.movie p {
+    padding-left: 20px;
+}
+
+.movie img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+p.info {
+    text-align: left;
+}
+
+#desc {
+    grid-column: 1/3;
+}
+
+img {
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffc107;
+}
+
+hr.vertical-hr {
+    display: hidden;
+}
+
+@media (min-width: 900px) {
+    article.movie {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    p.info {
+        grid-column: 1 / 2;
+        display: block;
+        margin-bottom: 0.5rem;
+    } 
+
+/* FIX THIS ^^^ */
+
+hr.vertical-hr {
+    display: none;
+}
+
+.book-img {
+    grid-area: 1 / 3 / 2 / 4;
+    /* display: inline; */
+}
+
+/* New meta container: place the info stack in the middle column */
+.meta {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding-right: 1rem;
+}
+
+/* Draw the vertical line to the right of the meta column so info sits left */
+.meta::after {
+    content: "";
+    position: absolute;
+    right: -1rem;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ffc107;
+}
+}
