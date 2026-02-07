@@ -86,7 +86,7 @@ hr.vertical-hr {
         grid-column: 1 / 2;
         display: block;
         margin-bottom: 0.5rem;
-        text-align: right;
+        text-align: left;
     } 
 
 hr.vertical-hr {
