@@ -25,15 +25,15 @@ footer {
 }
 
 .main-nav a {
-    color: rgb(210, 72, 120);
+    color: #b30059;
     text-decoration: none;
 }
 
-#movie-list {
+#book-list {
     padding: 0 2rem;
 }
 
-.movie {
+.book {
     /* border: 2px solid #ccc; */
     /* padding: 1rem; */
     /* border-radius: 10px; */
@@ -41,18 +41,18 @@ footer {
     margin: 20px auto;
 }
 
-.movie h2 {
+.book h2 {
     color: #b30059;
     font-size: 1.5rem;
     text-align: center;
     margin: 20px;
 }
 
-.movie p {
+.book p {
     padding-left: 20px;
 }
 
-.movie img {
+.book img {
     max-width: 100%;
     display: block;
     border-radius: 8px;
@@ -82,7 +82,7 @@ hr.vertical-hr {
 }
 
 @media (min-width: 900px) {
-    article.movie {
+    article.book {
         display: grid;
         grid-template-columns: auto auto auto;
     }
