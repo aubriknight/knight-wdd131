@@ -30,6 +30,10 @@ th {
     background-color: #839698;
 }
 
+ul {
+    color: white;
+}
+
 @media screen and (min-width: 700px) {
     table {
         width: 95%;

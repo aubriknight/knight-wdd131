@@ -54,8 +54,16 @@ function convert(grade) {
 }
 
 const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
-
 const upperWords = words.map(item => item.toUpperCase());
+
+// Creates a list item for each fruit and adds it to the ul
+const ul = document.getElementById('fruitList');
+let html = '';
+words.forEach((fruit) => {
+    html += `<li>${fruit}</li>`;
+});
+ul.innerHTML = html;
+
 
 const students = [
     { last: 'Andrus', first: 'Aaron', grade: "A"},
