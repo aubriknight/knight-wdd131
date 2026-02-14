@@ -55,13 +55,17 @@ articles.forEach((article) => {
 	const articleElem = document.createElement('article');
 	articleElem.classList.add('book');	
 	articleElem.innerHTML = `
+	<div class="meta">
 		<p class="date">${article.date}</p>
 		<p class="ages">Recommended ages: ${article.ages}</p>
 		<p class="genre">Genre: ${article.genre}</p>
 		<p class="rating">Rating: <span>${article.stars}</span></p>
+	</div>
+	<div class="book-img">
 		<h2>${article.title}</h2>
 		<img src="${article.imgSrc}" alt="${article.imgAlt}">
 		<p class="description">${article.description}</p>
+	</div>
 	`;
 	main.appendChild(articleElem);
 });
