@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="creditcard.css">
+    <script src="creditcard.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <form action="creditcard" id="creditCardForm" method="post">
+            <div id="cardBack">
+                <div id="cvvContainer">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="xxx" required>
+                </div>
+            </div>
+            <div id="cardFront">
+                <label for="total">Total: $199</label>
+
+                <label for="emoji">💳</label>
+
+                <div id="creditCardNumberContainer">
+                    <label for="creditCardNumber">Card Number:</label>
+                    <input type="text" id="creditCardNumber" name="creditCardNumber" pattern="[0-9]{16}" placeholder="Enter 16 digits" required>
+                </div>
+
+                <div id="cardHolderContainer">
+                    <label for="cardHolder">Card Holder:</label>
+                    <input type="text" id="cardHolder" name="cardHolder"  placeholder="First Last" required>
+                </div>
+
+                <div id="cardExpiration">
+                    <label for="expirationDate">EXPIRATION</label>
+                    <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+                    <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+                </div>
+            </div>
+            <div id="submitButton">
+                <div class="errors" style="color: red; margin-top: 10px;"></div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
