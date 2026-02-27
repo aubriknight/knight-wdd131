@@ -5,9 +5,12 @@ const card = {
     health: 100,
     // stop from going below 0
     attacked: function () {
-        this.health = Math.max(0, this.health - 10);
+        this.health = Math.max(0, this.health - 20);
         const healthElement = document.querySelector('.stats p:nth-child(3)');
         healthElement.textContent = `Health: ${this.health}`;
+        if (this.health === 0) {
+            alert("Snortleblat has been defeated!");
+        }
     },
     // stop from going above 20
     levelUp: function () {

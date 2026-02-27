@@ -5,25 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A character card for Snortleblat, a Swamp Beast Diplomat">
 
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Put Page Title Here">
-    <meta property="og:description" content="Put Page Description Here">
-    <meta property="og:url" content="https://yourURLofPage.here">
-    <meta property="og:image" content="https://yourURLofSocialPreviewImageHere.png">
-
-    <!-- Twitter Card -->
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="A character card for Snortleblat, a Swamp Beast Diplomat">
+    <meta property="og:url" content="https://aubriknight.github.io/knight-wdd131/week8/character.html">
+    <meta property="og:image" content="https://aubriknight.github.io/knight-wdd131/week8/snortleblat.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Put Page Title Here">
-    <meta name="twitter:description" content="Put Page Description Here">
-    <meta name="twitter:image" content="https://yourURLofSocialPreviewImageHere.png">
-
-    <!-- One favicon (ICO works everywhere) -->
-    <link rel="icon" href="/favicon.ico">
-
-    <!-- One Apple Touch Icon (iOS home screen) -->
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="A character card for Snortleblat, a Swamp Beast Diplomat">
+    <meta name="twitter:image" content="https://aubriknight.github.io/knight-wdd131/week8/snortleblat.webp">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://aubriknight.github.io/knight-wdd131/week8/snortleblat.webp">
 
     <title>Document</title>
     <link rel="stylesheet" href="character.css">
@@ -31,19 +25,21 @@
 </head>
 
 <body>
-    <div class="card">
-        <img src="snortleblat.webp" alt="Snortleblat" class="image">
-        <h2 class="name">Snortleblat</h2>
-        <div class="stats">
-            <p><strong>Class:</strong> Swamp Beast Diplomat</p>
-            <p><strong>Level:</strong> 5</p>
-            <p><strong>Health:</strong> 100</p>
+    <main>
+        <div class="card">
+            <img src="snortleblat.webp" alt="Snortleblat" class="image">
+            <h2 class="name">Snortleblat</h2>
+            <div class="stats">
+                <p><strong>Class:</strong> Swamp Beast Diplomat</p>
+                <p><strong>Level:</strong> 5</p>
+                <p><strong>Health:</strong> 100</p>
+            </div>
+            <div class="buttons">
+                <button id="attacked">Attacked</button>
+                <button id="levelUp">Level Up</button>
+            </div>
         </div>
-        <div class="buttons">
-            <button id="attacked">Attacked</button>
-            <button id="levelUp">Level Up</button>
-        </div>
-    </div>
+    </main>
 </body>
 
 </html>
