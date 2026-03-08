@@ -1,0 +1,158 @@
+
+button.search-button {
+  background-image: url('images/search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  color: transparent;
+  border-radius: 2px;
+}
+
+
+search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 6px 10px;
+  width: 500px;
+  margin: 0 auto 20px auto; 
+}
+
+
+search input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+  padding: 6px 10px;
+}
+
+search .search-button {
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  background-size: 20px;
+}
+
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+img.logo {
+  max-width: 80px;
+}
+
+h1 {
+  font-size: 32px; 
+  margin: 0;
+}
+
+
+.recipe-card {
+  border: 2px solid black;
+  border-radius: 20px;
+  background: white;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+img.recipe-image {
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+
+.recipe-info {
+  padding: 15px;
+}
+
+.tag-button {
+  background: #eee;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: #2a6fdb;
+  margin: 5px 0;
+}
+
+.rating {
+  margin: 5px 0 10px;
+}
+
+p.description {
+  display: none;
+  color: #555;
+  line-height: 1.4;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+img.social-icon {
+  width: 40px;
+  margin: 0 10px;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+  .recipe-card {
+    display: flex;
+    align-items: stretch;
+  }
+
+  img.recipe-image {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .recipe-info {
+    width: 50%;
+    padding: 25px;
+  }
+
+  p.description {
+    display: block;
+  }
+
+  footer {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .social {
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  search {
+    width: 500px;
+    padding: 8px 14px;
+  }
+
+}
