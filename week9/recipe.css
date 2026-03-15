@@ -111,6 +111,9 @@ p.description {
 footer {
   text-align: center;
   margin-top: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 img.social-icon {
