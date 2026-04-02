@@ -332,8 +332,7 @@ function renderRecipe(recipe) {
 
 function renderAll(list) {
     recipeContainer.innerHTML = "";
-    list.forEach(renderRecipe);
-}
+    list.forEach(renderRecipe)}
 
 function init() {
     renderAll(recipes);
